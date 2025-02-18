@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Wheel</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./styles.css" />
+	</head>
+	<body>
+		<section class="container">
+			<div class="wheel-container">
+				<div class="pointer"></div>
+				<ul class="wheel" id="wheel">
+					<li class="wheel-item" style="--i: 0; background: red">
+						<span style="padding: 20;">1$</span>
+					</li>
+					<li class="wheel-item" style="--i: 1; background-color: #e15b1d">
+						<span>10$</span>
+					</li>
+					<li class="wheel-item" style="--i: 2; background-color: #ffff00">
+						<span>20$</span>
+					</li>
+					<li class="wheel-item" style="--i: 3; background-color: #008000">
+						<span>30$</span>
+					</li>
+					<li class="wheel-item" style="--i: 4; background-color: #0000ff">
+						<span>40$</span>
+					</li>
+					<li class="wheel-item" style="--i: 5; background-color: #4b0082">
+						<span>50$</span>
+					</li>
+					<li class="wheel-item" style="--i: 6; background-color: #ee82ee">
+						<span>100$</span>
+					</li>
+					<li class="wheel-item" style="--i: 7; background-color: #ff1493">
+						<span>200$</span>
+					</li>
+				</ul>
+			</div>
+			<button class="button" id="spin-button">Вращать</button>
+
+			<!--popup  -->
+			<div class="popup" id="popup">
+				<p class="popup-text">Ваш приз: <span id="prize-amount">300$</span></p>
+				<button class="button" id="collect-button">Забрать</button>
+			</div>
+		</section>
+
+		<script src="script.js"></script>
+	</body>
+</html>
